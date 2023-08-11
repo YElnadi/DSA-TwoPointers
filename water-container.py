@@ -9,10 +9,10 @@ def maxArea(height):
 
         if height[l] < height[r]:
             l += 1
-        elif height[r] < height[l]:
-            r -= 1
         else:
-            return res 
+            r -= 1
+        
+    return res 
         
 
-print(maxArea([1,8,6,2,5,4,8,3,7]))
+print(maxArea([1,2]))
