@@ -151,8 +151,8 @@
 # print(find_pair([15, 8, 8, 2, 6, 4, 1, 7], 2, 8))
 class Solution:
     def isValid(self, s: str) -> bool:
-       stack = []
-       brackets = {')':'(', ']':'[', '}':'{'}
+        stack = []
+        brackets = {')': '(', ']': '[', '}': '{'}
         for char in s:
             if char in '({[':
                 stack.append(char)
@@ -162,4 +162,4 @@ class Solution:
                 else:
                     return False
         return not stack
-                    
+
