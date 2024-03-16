@@ -5,3 +5,14 @@ Note that it is the kth largest element in the sorted order, not the kth distinc
 
 Can you solve it without sorting?
 '''
+
+from collections import deque
+class Solution:
+    def findKthLargest(self, nums: List[int], k: int) -> int:
+        heap = []
+        for num in nums:
+            heapq.heappush(heap, num)
+            if len(heap) > k:
+                heapq.heappop(heap)
+        return heap[0]
+        
