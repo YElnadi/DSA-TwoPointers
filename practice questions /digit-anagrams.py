@@ -1,3 +1,6 @@
+'''
+
+'''
 def solution (a):
     pairs = {}
     count = 0
